@@ -1,0 +1,23 @@
+---
+
+- name: run the playbook tasks on the localhost
+  hosts: localhost
+  become: yes
+  tasks:
+
+  - name: print out the hostname of target
+    command: hostname
+  
+  - name: update the apt package index i.e. apt-get update
+    apt: update_cache=yes
+
+  - name: upgrade system packages i.e. apt-get upgrade
+    apt: upgrade=yes
+
+  - name: install common packages
+    apt: name={{ item }} state=present
+    with_items:
+      - vim
+      - curl
+      - ack
+      - ccze
