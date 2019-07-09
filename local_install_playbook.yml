@@ -21,3 +21,6 @@
       - curl
       - ack
       - ccze
+      - htop
+      - shutter
+      
