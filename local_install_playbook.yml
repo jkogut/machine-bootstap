@@ -27,4 +27,5 @@
       - ca-certificates
       - software-properties-common
       - jq
-
+      - ipython
+      - python-pip
