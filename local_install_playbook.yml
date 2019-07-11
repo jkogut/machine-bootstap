@@ -30,3 +30,21 @@
       - ipython
       - python-pip
       - docker-compose
+
+  - name: install kubectx from github repo
+    git:
+      repo: https://github.com/ahmetb/kubectx
+      dest: /opt/github/kubectx
+    tags: 
+      - github
+
+  - name: create syslinks for kubectx scripts from github
+    file: 
+      src: "/opt/github/kubectx/{{ item.src }}"
+      dest: "/usr/local/bin/{{ item.dest }}"
+      state: link
+    with_items:
+      - { src: kubectx, dest: kubectx }
+      - { src: kubens, dest: kubens }
+    tags:
+      - github
