@@ -39,6 +39,7 @@
 ## K8S related stuff
   - name: install helm with snap
     # snap module is supported for ansible >= 2.8
+    # https://docs.ansible.com/ansible/latest/modules/snap_module.html#snap-module
     command: snap install helm --classic
     tags:
       - helm
