@@ -30,8 +30,12 @@
       - ipython
       - python-pip
       - docker-compose
+    tags:
+      - apt
 
 ## K8S related stuff
+
+    # snap module is supported for ansible >= 2.8
   - name: install helm with snap
     command: snap install helm --classic
     tags:
