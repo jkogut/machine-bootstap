@@ -29,3 +29,4 @@
       - jq
       - ipython
       - python-pip
+      - docker-compose
