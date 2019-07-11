@@ -31,6 +31,12 @@
       - python-pip
       - docker-compose
 
+## K8S related stuff
+  - name: install helm with snap
+    command: snap install helm --classic
+    tags:
+      - helm
+
   - name: install kubectx from github repo
     git:
       repo: https://github.com/ahmetb/kubectx
