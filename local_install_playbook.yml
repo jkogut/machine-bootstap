@@ -36,6 +36,22 @@
     tags:
       - apt
 
+## Docker related stuff
+  - name: Add Docker GPG key
+    apt_key: 
+      url: https://download.docker.com/linux/ubuntu/gpg
+
+  - name: Add Docker APT repository
+    apt_repository:
+      repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ansible_distribution_release}} stable
+      state: present
+      filename: docker
+
+  - name: Install Docker-ce
+    apt:
+      name: docker-ce
+      state: present
+      
 ## K8S related stuff
   - name: install helm with snap
     # snap module is supported for ansible >= 2.8
