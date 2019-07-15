@@ -1,5 +1,8 @@
 ---
 
+## Playbook for Ubuntu 18.04 machine DevOps dedicated setup  
+## Author: @jkogut
+
 - name: run the playbook tasks on the localhost
   hosts: localhost
   become: yes
