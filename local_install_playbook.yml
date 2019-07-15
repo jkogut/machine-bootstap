@@ -36,16 +36,25 @@
       - ipython
       - python-pip
       - docker-compose
+      - default-jre
+      - default-jdk
+      - scala
     tags:
       - apt
 
-## Common packages installation with PIP
+## Custom packages installation with PIP
   - name: install common packages with PIP
     pip: name={{ item }}
     with_items:
-      - apache-libcloud
+      - apache-libcloud # for using ansible@gcp
     tags:
       - pip
+
+## Custom packages installation with SNAP 
+  - name: install intellij-idea-community edition with snap
+    command: snap install intellij-idea-community --classic
+    tags:
+      - intellij
 
 ## Docker related stuff
   - name: Add Docker GPG key
