@@ -19,8 +19,8 @@
   - name: upgrade system packages i.e. apt-get upgrade
     apt: upgrade=yes
 
-## Common packages installation
-  - name: install common packages
+## Common packages installation with APT
+  - name: install common packages with APT
     apt: name={{ item }} state=present
     with_items:
       - vim
@@ -38,6 +38,14 @@
       - docker-compose
     tags:
       - apt
+
+## Common packages installation with PIP
+  - name: install common packages with PIP
+    pip: name={{ item }}
+    with_items:
+      - apache-libcloud
+    tags:
+      - pip
 
 ## Docker related stuff
   - name: Add Docker GPG key
