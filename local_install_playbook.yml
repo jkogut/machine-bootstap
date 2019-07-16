@@ -80,12 +80,15 @@
       - docker
       
 ## K8S related stuff
-  - name: install helm with snap
+  - name: install kubectl + helm with snap
     # snap module is supported for ansible >= 2.8
     # https://docs.ansible.com/ansible/latest/modules/snap_module.html#snap-module
-    command: snap install helm --classic
-    tags:
+    command: snap install {{ item }} --classic
+    with_items:
       - helm
+      - kubectl
+    tags:
+      - snap-k8s
 
   - name: install kubectx from github repo
     git:
