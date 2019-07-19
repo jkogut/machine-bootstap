@@ -40,6 +40,7 @@
       - default-jdk
       - scala
       - kafkacat
+      - chromium-browser
     tags:
       - apt
 
