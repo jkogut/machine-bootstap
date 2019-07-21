@@ -35,11 +35,10 @@ ansible 2.5.1
       - kubectx
 ```
 
-* e.g.: run "helm" taged section:
+* e.g.: run "pip" taged section:
 
 ```js
-$ ansible-playbook -i inventory.ini -K local_install_playbook.yml -t "helm"
-
+$ ansible-playbook -i inventory.ini -K local_install_playbook.yml -t "pip"
 SUDO password: 
  [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
 
@@ -49,9 +48,9 @@ PLAY [run the playbook tasks on the localhost] *********************************
 TASK [Gathering Facts] ************************************************************************
 ok: [localhost]
 
-TASK [install helm with snap] ******************************************************************
-changed: [localhost]
+TASK [install common packages with PIP] *******************************************************
+ok: [localhost] => (item=apache-libcloud)
 
-PLAY RECAP *************************************************************************************
-localhost                  : ok=2    changed=1    unreachable=0    failed=0 
+PLAY RECAP ************************************************************************************
+localhost                  : ok=2    changed=0    unreachable=0    failed=0  
 ```
