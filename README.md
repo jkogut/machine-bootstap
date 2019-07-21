@@ -13,6 +13,28 @@ ansible 2.5.1
   python version = 2.7.15+ (default, Nov 27 2018, 23:36:35) [GCC 7.3.0]
 ```
 
+* list available tags with `grep -A1 tag local_install_playbook.yml`:
+
+```js
+    tags:
+      - apt
+--
+    tags:
+      - pip
+--
+    tags:
+      - intellij
+--
+    tags:
+      - docker
+--
+    tags:
+      - snap-k8s
+--
+    tags: 
+      - kubectx
+```
+
 * e.g.: run "helm" taged section:
 
 ```js
