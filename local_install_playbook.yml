@@ -40,6 +40,10 @@
       - default-jdk
       - scala
       - kafkacat
+      - iotop
+      - sysdig
+      - net-tools
+      - glances
       - chromium-browser
     tags:
       - apt
