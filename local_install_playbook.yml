@@ -52,7 +52,7 @@
   - name: install common packages with PIP
     pip: name={{ item }}
     with_items:
-      - apache-libcloud # for using ansible@gcp
+      - google-auth # for using ansible@gcp
     tags:
       - pip
 
