@@ -1,3 +1,12 @@
+## install ansible with ./install_latest_ansible.sh shell script 
+
+* [more info](https://www.howtoforge.com/how-to-install-and-configure-ansible-on-ubuntu-1804/)
+
+```js
+$ ./install_latest_ansible.sh
+```
+
+
 # machine-bootstap
 Bootstrap Ubuntu machine with ansible
 
