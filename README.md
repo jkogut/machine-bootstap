@@ -1,4 +1,4 @@
-## install ansible with ./install_latest_ansible.sh shell script 
+## install ansible with shell script 
 
 * [more info](https://www.howtoforge.com/how-to-install-and-configure-ansible-on-ubuntu-1804/)
 
@@ -14,7 +14,7 @@ Bootstrap Ubuntu machine with ansible
 
 ```js
 $ ansible --version
-ansible 2.5.1
+ansible 2.8.3
   config file = /etc/ansible/ansible.cfg
   configured module search path = [u'/home/username/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/lib/python2.7/dist-packages/ansible
