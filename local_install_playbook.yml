@@ -53,6 +53,7 @@
     pip: name={{ item }}
     with_items:
       - google-auth # for using ansible@gcp
+      - ruamel.yaml # better yaml support
     tags:
       - pip
 
