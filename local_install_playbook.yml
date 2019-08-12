@@ -45,6 +45,7 @@
       - net-tools
       - glances
       - chromium-browser
+      - terminator
     tags:
       - apt
 
