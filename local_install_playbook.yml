@@ -46,6 +46,7 @@
       - glances
       - chromium-browser
       - terminator
+      - mysql-client  
     tags:
       - apt
 
