@@ -39,6 +39,7 @@
       - default-jre
       - default-jdk
       - scala
+      - golang  
       - kafkacat
       - iotop
       - sysdig
