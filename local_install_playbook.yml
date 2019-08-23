@@ -49,6 +49,7 @@
       - terminator
       - mysql-client
       - tmux  
+      - pv
     tags:
       - apt
 
