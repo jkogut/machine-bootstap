@@ -46,7 +46,8 @@
       - glances
       - chromium-browser
       - terminator
-      - mysql-client  
+      - mysql-client
+      - tmux  
     tags:
       - apt
 
