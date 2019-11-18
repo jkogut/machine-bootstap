@@ -50,8 +50,9 @@
       - chromium-browser
       - terminator
       - mysql-client
-      - tmux  
+      - tmux
       - pv
+      - openconnect
     tags:
       - apt
 
