@@ -53,6 +53,8 @@
       - tmux
       - pv
       - openconnect
+      - p7zip-full
+      - p7zip-rar
     tags:
       - apt
 
