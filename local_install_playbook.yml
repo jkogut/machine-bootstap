@@ -61,6 +61,7 @@
     with_items:
       - google-auth # for using ansible@gcp
       - ruamel.yaml # better yaml support
+      - awscli      # awscli 
     tags:
       - pip
 
