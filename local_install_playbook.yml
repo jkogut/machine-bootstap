@@ -131,3 +131,10 @@
       mv /tmp/eksctl /usr/local/bin
     tags:
       - eksctl
+
+  - name: download and uncompress aws-iam-authenticator
+    shell: 
+      curl -o /tmp/aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.14.6/2019-08-22/bin/linux/amd64/aws-iam-authenticator;
+      mv /tmp/aws-iam-authenticator /usr/local/bin; chmod +x /usr/local/bin/aws-iam-authenticator
+    tags:
+      - aws-iam-authenticator
