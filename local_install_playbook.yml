@@ -64,7 +64,8 @@
     with_items:
       - google-auth # for using ansible@gcp
       - ruamel.yaml # better yaml support
-      - awscli      # awscli 
+      - awscli      # awscli
+      - snakebite   # python HDFS client
     tags:
       - pip
 
