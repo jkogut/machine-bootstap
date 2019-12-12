@@ -55,6 +55,7 @@
       - openconnect
       - p7zip-full
       - p7zip-rar
+      - tree
     tags:
       - apt
 
