@@ -67,6 +67,7 @@
       - ruamel.yaml # better yaml support
       - awscli      # awscli
       - snakebite   # python HDFS client
+      - kubernetes
     tags:
       - pip
 
