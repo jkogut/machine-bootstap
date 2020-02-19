@@ -68,6 +68,7 @@
       - awscli      # awscli
       - snakebite   # python HDFS client
       - kubernetes
+      - jinja2
     tags:
       - pip
 
