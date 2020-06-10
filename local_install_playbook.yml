@@ -35,6 +35,7 @@
       - jq
       - ipython
       - python-pip
+      - python3-pip
       - docker-compose
       - default-jre
       - default-jdk
